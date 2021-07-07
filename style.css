@@ -68,6 +68,7 @@ ul{
 
 #main{
     margin: auto;
+    box-shadow: 10px 10px 100px #000;
     width: 80%;
     padding-top: 1em;
     background: rgb(78, 78, 78);
