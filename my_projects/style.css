@@ -1,23 +1,15 @@
-/*Font imports*/
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
-    
+h1{
+    font-weight: bolder;
 }
 
 body{
     background: rgb(207, 207, 207);
-}
-
-h1{
-    font-weight: bolder;
 }
 
 a{
@@ -26,60 +18,72 @@ a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-
-#header{
+#Header{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2em;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 2em;
-    color: white;
-    background-image: url(./img/background.png);
+    padding-bottom: 2em;
     border-bottom: 10px solid #0000;
 }
 
-#nav{
+#Header > h1{
+    color: #fff;
+}
+
+#Header > img{
+    border: solid 5px #ffff;
+}
+
+#Nav{
     width: 100%;
     border-top: solid 2px #ffff;
     background-color: rgb(34, 34, 34);
 }
 
-#nav > ol{
+#Nav > ol{
     list-style: none;
     display: flex;
 }
 
-#nav > ol > li{
+#Nav > ol > li{
     margin: 0px;
     padding: 10px;
     transition: 0.3s;
     border-left: solid 2px rgba(255, 255, 255, 0.219);
 }
 
-#nav > ol > li:hover{
+#Nav > ol > li:hover{
     color: #0000;
     background: rgba(255, 255, 255, 0.342);
 }
 
-#main{
-    margin: auto;
-    box-shadow: 10px 10px 100px #000;
-    width: 80%;
-    padding-top: 1em;
+#Main{
+    margin: 0 auto;
+    padding-top: 2em;
+    width: 90%;
+    padding-bottom: 20em;
     background: rgb(243, 243, 243);
 }
 
-#main hr{
-    margin: 0 auto;
-    width: 80%;
+#Main a{
+    color: #000;
 }
 
-#pie{
-    color: #ffff;
+#Main .homework-list{
+    margin-left: 20px;
+}
+
+#Main ol{
+    margin-left: 2em;
+}
+
+#Footer{
+    color: #ffffff;
     text-align: center;
     padding: 15px;
     font-size: 15px;
@@ -88,19 +92,15 @@ ul{
 }
 
 .active{
-    color: #000;
     background: #ffff;
-}
-
-.imagen-redonda{
-    border-radius: 360px;
+} .active a{
+    color: #000;
 }
 
 .imagen-titulo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    
+    display: flex;
     margin-bottom: 20px;
 }
 
@@ -112,45 +112,32 @@ ul{
     margin-left: 20px;
 }
 
-.titulo{
-    display: flex;
-    justify-content: center;
+.titulo2{
     font-size: 30px;
     font-weight: bold;
 }
 
-.center{
+.centrada{
     text-align: center;
 }
 
-.red-social{
-    display: flex;
-    align-items: center;
-}
-
-.red-social ul{
-    display: flex;
-    margin: 0 auto;
-    padding: 2em;
-}
-
-.red-social ul > li{
-    margin: 0 1em;
+.imagen-redonda2{
+    border-radius: 360px;
 }
 
 @media only screen and (max-width: 800px){
-    #main{
+    #Main{
         margin: auto;
         width: 100%;
     }
-    
-    #nav{
+
+    #Nav{
         text-align: center;
         border-top: solid 2px #ffff;
         border-bottom: solid 2px #ffff;
     }
 
-    #nav ol{
+    #Nav ol{
         display: block;
         list-style: none;
     }
